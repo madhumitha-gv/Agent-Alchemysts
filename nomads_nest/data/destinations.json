@@ -1,5 +1,2002 @@
 [
-    {"name": "Bali", "features": "beach, culture, affordable, mountains"},
-    {"name": "Paris", "features": "culture, food, luxury"},
-    {"name": "Tokyo", "features": "adventure, food, vibrant"}
+    {
+        "name":"Tokyo",
+        "features":"romantic getaway, peaceful, food"
+    },
+    {
+        "name":"London",
+        "features":"nightlife, outdoor adventure, luxury travel"
+    },
+    {
+        "name":"New York",
+        "features":"history, luxury travel, peaceful"
+    },
+    {
+        "name":"Paris",
+        "features":"luxury, health and wellness, eco-tourism"
+    },
+    {
+        "name":"Sydney",
+        "features":"family-friendly, romantic getaway, food"
+    },
+    {
+        "name":"Rome",
+        "features":"shopping, eco-tourism, family-friendly"
+    },
+    {
+        "name":"Amsterdam",
+        "features":"affordable, luxury travel, luxury"
+    },
+    {
+        "name":"Barcelona",
+        "features":"nightlife, vibrant, nightlife"
+    },
+    {
+        "name":"Berlin",
+        "features":"culture, romantic getaway, affordable"
+    },
+    {
+        "name":"Bangkok",
+        "features":"budget-friendly, nightlife, vibrant"
+    },
+    {
+        "name":"Dubai",
+        "features":"vibrant, nightlife, family-friendly"
+    },
+    {
+        "name":"Singapore",
+        "features":"health and wellness, nightlife, wildlife safari"
+    },
+    {
+        "name":"Hong Kong",
+        "features":"luxury, photography, festivals"
+    },
+    {
+        "name":"Lisbon",
+        "features":"culture, solo travel, shopping"
+    },
+    {
+        "name":"Moscow",
+        "features":"solo travel, eco-tourism, adventure"
+    },
+    {
+        "name":"Mumbai",
+        "features":"wildlife safari, photography, historical landmarks"
+    },
+    {
+        "name":"Cape Town",
+        "features":"shopping, eco-tourism, nightlife"
+    },
+    {
+        "name":"Rio de Janeiro",
+        "features":"beach, health and wellness, luxury"
+    },
+    {
+        "name":"Seoul",
+        "features":"nature, festivals, luxury"
+    },
+    {
+        "name":"Dublin",
+        "features":"nightlife, outdoor adventure, solo travel"
+    },
+    {
+        "name":"Prague",
+        "features":"beach, outdoor adventure, nightlife"
+    },
+    {
+        "name":"Vienna",
+        "features":"solo travel, family-friendly, culture"
+    },
+    {
+        "name":"Budapest",
+        "features":"nightlife, affordable, romantic getaway"
+    },
+    {
+        "name":"Venice",
+        "features":"adventure, eco-tourism, history"
+    },
+    {
+        "name":"Madrid",
+        "features":"photography, nightlife, adventure"
+    },
+    {
+        "name":"Buenos Aires",
+        "features":"romantic getaway, culture, luxury"
+    },
+    {
+        "name":"Stockholm",
+        "features":"budget-friendly, romantic getaway, nightlife"
+    },
+    {
+        "name":"Athens",
+        "features":"photography, budget-friendly, solo travel"
+    },
+    {
+        "name":"Istanbul",
+        "features":"health and wellness, budget-friendly, food"
+    },
+    {
+        "name":"Copenhagen",
+        "features":"family-friendly, vibrant, shopping"
+    },
+    {
+        "name":"Zurich",
+        "features":"photography, eco-tourism, vibrant"
+    },
+    {
+        "name":"Helsinki",
+        "features":"eco-tourism, nightlife, food"
+    },
+    {
+        "name":"Oslo",
+        "features":"culture, affordable, luxury"
+    },
+    {
+        "name":"Warsaw",
+        "features":"luxury travel, affordable, solo travel"
+    },
+    {
+        "name":"Krakow",
+        "features":"festivals, adventure, wildlife safari"
+    },
+    {
+        "name":"Montreal",
+        "features":"history, nightlife, historical landmarks"
+    },
+    {
+        "name":"Toronto",
+        "features":"budget-friendly, nature, shopping"
+    },
+    {
+        "name":"Vancouver",
+        "features":"peaceful retreats, luxury, food"
+    },
+    {
+        "name":"Chicago",
+        "features":"nightlife, gastronomy, family-friendly"
+    },
+    {
+        "name":"San Francisco",
+        "features":"peaceful, adventure, vibrant"
+    },
+    {
+        "name":"Los Angeles",
+        "features":"nature, peaceful, solo travel"
+    },
+    {
+        "name":"Las Vegas",
+        "features":"historical landmarks, peaceful, outdoor adventure"
+    },
+    {
+        "name":"Miami",
+        "features":"solo travel, budget-friendly, peaceful"
+    },
+    {
+        "name":"Boston",
+        "features":"wildlife safari, peaceful, nightlife"
+    },
+    {
+        "name":"Mexico City",
+        "features":"photography, affordable, budget-friendly"
+    },
+    {
+        "name":"Cancun",
+        "features":"wildlife safari, family-friendly, shopping"
+    },
+    {
+        "name":"Cusco",
+        "features":"outdoor adventure, budget-friendly, nature"
+    },
+    {
+        "name":"Lima",
+        "features":"shopping, solo travel, peaceful retreats"
+    },
+    {
+        "name":"Bogota",
+        "features":"nightlife, peaceful retreats, gastronomy"
+    },
+    {
+        "name":"Santiago",
+        "features":"gastronomy, health and wellness, wildlife safari"
+    },
+    {
+        "name":"Quito",
+        "features":"family-friendly, shopping, gastronomy"
+    },
+    {
+        "name":"Lagos",
+        "features":"vibrant, eco-tourism, nightlife"
+    },
+    {
+        "name":"Nairobi",
+        "features":"wildlife safari, peaceful, solo travel"
+    },
+    {
+        "name":"Addis Ababa",
+        "features":"food, nightlife, outdoor adventure"
+    },
+    {
+        "name":"Marrakech",
+        "features":"food, gastronomy, outdoor adventure"
+    },
+    {
+        "name":"Rabat",
+        "features":"historical landmarks, vibrant, solo travel"
+    },
+    {
+        "name":"Casablanca",
+        "features":"nightlife, history, nightlife"
+    },
+    {
+        "name":"Accra",
+        "features":"peaceful retreats, outdoor adventure, adventure"
+    },
+    {
+        "name":"Dakar",
+        "features":"outdoor adventure, history, culture"
+    },
+    {
+        "name":"Kigali",
+        "features":"luxury travel, adventure, solo travel"
+    },
+    {
+        "name":"Zanzibar",
+        "features":"family-friendly, beach, romantic getaway"
+    },
+    {
+        "name":"Antananarivo",
+        "features":"health and wellness, wildlife safari, family-friendly"
+    },
+    {
+        "name":"Port Louis",
+        "features":"romantic getaway, family-friendly, health and wellness"
+    },
+    {
+        "name":"Colombo",
+        "features":"eco-tourism, shopping, health and wellness"
+    },
+    {
+        "name":"Kathmandu",
+        "features":"photography, nightlife, peaceful retreats"
+    },
+    {
+        "name":"Hanoi",
+        "features":"romantic getaway, family-friendly, adventure"
+    },
+    {
+        "name":"Ho Chi Minh City",
+        "features":"gastronomy, budget-friendly, family-friendly"
+    },
+    {
+        "name":"Phnom Penh",
+        "features":"nightlife, culture, peaceful"
+    },
+    {
+        "name":"Siem Reap",
+        "features":"beach, historical landmarks, adventure"
+    },
+    {
+        "name":"Manila",
+        "features":"historical landmarks, culture, festivals"
+    },
+    {
+        "name":"Cebu",
+        "features":"family-friendly, beach, eco-tourism"
+    },
+    {
+        "name":"Jakarta",
+        "features":"health and wellness, family-friendly, beach"
+    },
+    {
+        "name":"Bali",
+        "features":"peaceful, vibrant, eco-tourism"
+    },
+    {
+        "name":"Kuala Lumpur",
+        "features":"affordable, luxury, nightlife"
+    },
+    {
+        "name":"Penang",
+        "features":"beach, nightlife, peaceful retreats"
+    },
+    {
+        "name":"Brunei",
+        "features":"adventure, photography, vibrant"
+    },
+    {
+        "name":"Abu Dhabi",
+        "features":"photography, nature, peaceful"
+    },
+    {
+        "name":"Doha",
+        "features":"peaceful, food, beach"
+    },
+    {
+        "name":"Muscat",
+        "features":"history, festivals, eco-tourism"
+    },
+    {
+        "name":"Tel Aviv",
+        "features":"romantic getaway, wildlife safari, festivals"
+    },
+    {
+        "name":"Jerusalem",
+        "features":"vibrant, budget-friendly, gastronomy"
+    },
+    {
+        "name":"Amman",
+        "features":"history, nightlife, beach"
+    },
+    {
+        "name":"Beirut",
+        "features":"eco-tourism, nature, gastronomy"
+    },
+    {
+        "name":"Tbilisi",
+        "features":"wildlife safari, historical landmarks, nightlife"
+    },
+    {
+        "name":"Baku",
+        "features":"beach, historical landmarks, history"
+    },
+    {
+        "name":"Yerevan",
+        "features":"affordable, nature, beach"
+    },
+    {
+        "name":"Astana",
+        "features":"photography, vibrant, nature"
+    },
+    {
+        "name":"Almaty",
+        "features":"outdoor adventure, history, family-friendly"
+    },
+    {
+        "name":"Ulaanbaatar",
+        "features":"health and wellness, affordable, luxury"
+    },
+    {
+        "name":"Melbourne",
+        "features":"luxury travel, peaceful, photography"
+    },
+    {
+        "name":"Brisbane",
+        "features":"nightlife, family-friendly, luxury travel"
+    },
+    {
+        "name":"Perth",
+        "features":"wildlife safari, outdoor adventure, photography"
+    },
+    {
+        "name":"Auckland",
+        "features":"nightlife, beach, adventure"
+    },
+    {
+        "name":"Christchurch",
+        "features":"nature, peaceful, historical landmarks"
+    },
+    {
+        "name":"Wellington",
+        "features":"nature, beach, eco-tourism"
+    },
+    {
+        "name":"Fiji",
+        "features":"gastronomy, beach, nightlife"
+    },
+    {
+        "name":"Tahiti",
+        "features":"beach, vibrant, romantic getaway"
+    },
+    {
+        "name":"Honolulu",
+        "features":"health and wellness, peaceful, gastronomy"
+    },
+    {
+        "name":"Anchorage",
+        "features":"family-friendly, food, culture"
+    },
+    {
+        "name":"Seattle",
+        "features":"festivals, outdoor adventure, culture"
+    },
+    {
+        "name":"Portland",
+        "features":"festivals, adventure, historical landmarks"
+    },
+    {
+        "name":"Denver",
+        "features":"food, photography, gastronomy"
+    },
+    {
+        "name":"Atlanta",
+        "features":"shopping, solo travel, nightlife"
+    },
+    {
+        "name":"New Orleans",
+        "features":"nature, food, nightlife"
+    },
+    {
+        "name":"Austin",
+        "features":"vibrant, romantic getaway, adventure"
+    },
+    {
+        "name":"Dallas",
+        "features":"peaceful, food, vibrant"
+    },
+    {
+        "name":"Houston",
+        "features":"luxury, food, adventure"
+    },
+    {
+        "name":"Minneapolis",
+        "features":"culture, peaceful, vibrant"
+    },
+    {
+        "name":"Philadelphia",
+        "features":"peaceful retreats, history, culture"
+    },
+    {
+        "name":"Washington D.C.",
+        "features":"romantic getaway, luxury, wildlife safari"
+    },
+    {
+        "name":"Baltimore",
+        "features":"health and wellness, nightlife, solo travel"
+    },
+    {
+        "name":"Detroit",
+        "features":"adventure, outdoor adventure, affordable"
+    },
+    {
+        "name":"Phoenix",
+        "features":"gastronomy, luxury travel, solo travel"
+    },
+    {
+        "name":"San Diego",
+        "features":"affordable, budget-friendly, nightlife"
+    },
+    {
+        "name":"Salt Lake City",
+        "features":"nature, nightlife, health and wellness"
+    },
+    {
+        "name":"Kansas City",
+        "features":"budget-friendly, beach, luxury"
+    },
+    {
+        "name":"Cleveland",
+        "features":"wildlife safari, health and wellness, vibrant"
+    },
+    {
+        "name":"Cincinnati",
+        "features":"peaceful retreats, romantic getaway, gastronomy"
+    },
+    {
+        "name":"Orlando",
+        "features":"nature, budget-friendly, vibrant"
+    },
+    {
+        "name":"Tampa",
+        "features":"gastronomy, nightlife, nightlife"
+    },
+    {
+        "name":"Charlotte",
+        "features":"beach, budget-friendly, peaceful retreats"
+    },
+    {
+        "name":"Raleigh",
+        "features":"outdoor adventure, historical landmarks, food"
+    },
+    {
+        "name":"Richmond",
+        "features":"solo travel, festivals, shopping"
+    },
+    {
+        "name":"Indianapolis",
+        "features":"photography, nature, wildlife safari"
+    },
+    {
+        "name":"Milwaukee",
+        "features":"budget-friendly, beach, festivals"
+    },
+    {
+        "name":"Providence",
+        "features":"eco-tourism, nature, festivals"
+    },
+    {
+        "name":"Pittsburgh",
+        "features":"luxury travel, family-friendly, shopping"
+    },
+    {
+        "name":"Ottawa",
+        "features":"photography, outdoor adventure, beach"
+    },
+    {
+        "name":"Calgary",
+        "features":"shopping, vibrant, eco-tourism"
+    },
+    {
+        "name":"Edmonton",
+        "features":"family-friendly, beach, festivals"
+    },
+    {
+        "name":"Winnipeg",
+        "features":"peaceful retreats, wildlife safari, nature"
+    },
+    {
+        "name":"Halifax",
+        "features":"luxury travel, vibrant, history"
+    },
+    {
+        "name":"Quebec City",
+        "features":"photography, eco-tourism, luxury"
+    },
+    {
+        "name":"Hamilton",
+        "features":"eco-tourism, nightlife, culture"
+    },
+    {
+        "name":"London (Canada)",
+        "features":"history, photography, luxury travel"
+    },
+    {
+        "name":"Regina",
+        "features":"nightlife, luxury, outdoor adventure"
+    },
+    {
+        "name":"Victoria",
+        "features":"health and wellness, affordable, peaceful"
+    },
+    {
+        "name":"St. John's",
+        "features":"festivals, historical landmarks, adventure"
+    },
+    {
+        "name":"Reykjavik",
+        "features":"outdoor adventure, eco-tourism, health and wellness"
+    },
+    {
+        "name":"Luxembourg City",
+        "features":"affordable, eco-tourism, adventure"
+    },
+    {
+        "name":"Brussels",
+        "features":"beach, eco-tourism, health and wellness"
+    },
+    {
+        "name":"Antwerp",
+        "features":"health and wellness, nightlife, romantic getaway"
+    },
+    {
+        "name":"Ghent",
+        "features":"food, romantic getaway, history"
+    },
+    {
+        "name":"Rotterdam",
+        "features":"eco-tourism, nightlife, affordable"
+    },
+    {
+        "name":"The Hague",
+        "features":"nightlife, nature, affordable"
+    },
+    {
+        "name":"Utrecht",
+        "features":"luxury, historical landmarks, nightlife"
+    },
+    {
+        "name":"Cologne",
+        "features":"family-friendly, peaceful, wildlife safari"
+    },
+    {
+        "name":"Frankfurt",
+        "features":"historical landmarks, solo travel, nightlife"
+    },
+    {
+        "name":"Munich",
+        "features":"culture, peaceful, nightlife"
+    },
+    {
+        "name":"Hamburg",
+        "features":"eco-tourism, nightlife, vibrant"
+    },
+    {
+        "name":"Dresden",
+        "features":"nightlife, peaceful retreats, beach"
+    },
+    {
+        "name":"Leipzig",
+        "features":"romantic getaway, culture, gastronomy"
+    },
+    {
+        "name":"Stuttgart",
+        "features":"luxury, peaceful retreats, historical landmarks"
+    },
+    {
+        "name":"Dusseldorf",
+        "features":"wildlife safari, family-friendly, gastronomy"
+    },
+    {
+        "name":"Gothenburg",
+        "features":"nightlife, nature, adventure"
+    },
+    {
+        "name":"Malmo",
+        "features":"luxury travel, nightlife, peaceful"
+    },
+    {
+        "name":"Bergen",
+        "features":"nightlife, beach, family-friendly"
+    },
+    {
+        "name":"Trondheim",
+        "features":"historical landmarks, nightlife, eco-tourism"
+    },
+    {
+        "name":"Tromso",
+        "features":"food, romantic getaway, peaceful retreats"
+    },
+    {
+        "name":"Vilnius",
+        "features":"vibrant, outdoor adventure, family-friendly"
+    },
+    {
+        "name":"Riga",
+        "features":"vibrant, romantic getaway, gastronomy"
+    },
+    {
+        "name":"Tallinn",
+        "features":"culture, history, outdoor adventure"
+    },
+    {
+        "name":"Lviv",
+        "features":"peaceful, gastronomy, photography"
+    },
+    {
+        "name":"Odessa",
+        "features":"beach, eco-tourism, luxury travel"
+    },
+    {
+        "name":"Belgrade",
+        "features":"peaceful, budget-friendly, nightlife"
+    },
+    {
+        "name":"Sofia",
+        "features":"vibrant, luxury travel, historical landmarks"
+    },
+    {
+        "name":"Bucharest",
+        "features":"luxury travel, family-friendly, vibrant"
+    },
+    {
+        "name":"Ljubljana",
+        "features":"nature, family-friendly, peaceful"
+    },
+    {
+        "name":"Bratislava",
+        "features":"outdoor adventure, peaceful retreats, nature"
+    },
+    {
+        "name":"Sarajevo",
+        "features":"health and wellness, solo travel, luxury travel"
+    },
+    {
+        "name":"Zagreb",
+        "features":"wildlife safari, nature, festivals"
+    },
+    {
+        "name":"Split",
+        "features":"food, nightlife, festivals"
+    },
+    {
+        "name":"Dubrovnik",
+        "features":"family-friendly, vibrant, culture"
+    },
+    {
+        "name":"Podgorica",
+        "features":"wildlife safari, luxury, solo travel"
+    },
+    {
+        "name":"Skopje",
+        "features":"peaceful, eco-tourism, festivals"
+    },
+    {
+        "name":"Tirana",
+        "features":"history, historical landmarks, adventure"
+    },
+    {
+        "name":"Chisinau",
+        "features":"outdoor adventure, culture, gastronomy"
+    },
+    {
+        "name":"Valletta",
+        "features":"romantic getaway, family-friendly, health and wellness"
+    },
+    {
+        "name":"Nicosia",
+        "features":"affordable, peaceful, festivals"
+    },
+    {
+        "name":"Malaga",
+        "features":"photography, family-friendly, eco-tourism"
+    },
+    {
+        "name":"Granada",
+        "features":"nightlife, budget-friendly, health and wellness"
+    },
+    {
+        "name":"Seville",
+        "features":"wildlife safari, eco-tourism, peaceful retreats"
+    },
+    {
+        "name":"Bilbao",
+        "features":"affordable, nature, budget-friendly"
+    },
+    {
+        "name":"Valencia",
+        "features":"outdoor adventure, luxury travel, budget-friendly"
+    },
+    {
+        "name":"Naples",
+        "features":"vibrant, luxury travel, nature"
+    },
+    {
+        "name":"Florence",
+        "features":"historical landmarks, health and wellness, budget-friendly"
+    },
+    {
+        "name":"Milan",
+        "features":"wildlife safari, solo travel, photography"
+    },
+    {
+        "name":"Turin",
+        "features":"shopping, photography, adventure"
+    },
+    {
+        "name":"Genoa",
+        "features":"health and wellness, family-friendly, shopping"
+    },
+    {
+        "name":"Palermo",
+        "features":"gastronomy, food, vibrant"
+    },
+    {
+        "name":"Catania",
+        "features":"shopping, luxury travel, nightlife"
+    },
+    {
+        "name":"Bologna",
+        "features":"outdoor adventure, health and wellness, historical landmarks"
+    },
+    {
+        "name":"Lyon",
+        "features":"romantic getaway, budget-friendly, gastronomy"
+    },
+    {
+        "name":"Marseille",
+        "features":"vibrant, history, family-friendly"
+    },
+    {
+        "name":"Nice",
+        "features":"beach, nightlife, solo travel"
+    },
+    {
+        "name":"Bordeaux",
+        "features":"eco-tourism, food, family-friendly"
+    },
+    {
+        "name":"Toulouse",
+        "features":"health and wellness, nightlife, nightlife"
+    },
+    {
+        "name":"Strasbourg",
+        "features":"festivals, budget-friendly, solo travel"
+    },
+    {
+        "name":"Geneva",
+        "features":"outdoor adventure, nature, culture"
+    },
+    {
+        "name":"Basel",
+        "features":"eco-tourism, romantic getaway, history"
+    },
+    {
+        "name":"Bern",
+        "features":"peaceful retreats, adventure, historical landmarks"
+    },
+    {
+        "name":"Tokyo 2",
+        "features":"gastronomy, luxury travel, peaceful"
+    },
+    {
+        "name":"London 3",
+        "features":"affordable, romantic getaway, photography"
+    },
+    {
+        "name":"New York 4",
+        "features":"food, solo travel, photography"
+    },
+    {
+        "name":"Paris 5",
+        "features":"gastronomy, shopping, romantic getaway"
+    },
+    {
+        "name":"Sydney 6",
+        "features":"family-friendly, nature, festivals"
+    },
+    {
+        "name":"Rome 7",
+        "features":"culture, photography, luxury"
+    },
+    {
+        "name":"Amsterdam 8",
+        "features":"culture, affordable, outdoor adventure"
+    },
+    {
+        "name":"Barcelona 9",
+        "features":"romantic getaway, nightlife, vibrant"
+    },
+    {
+        "name":"Berlin 10",
+        "features":"budget-friendly, beach, festivals"
+    },
+    {
+        "name":"Bangkok 11",
+        "features":"peaceful retreats, vibrant, luxury travel"
+    },
+    {
+        "name":"Dubai 12",
+        "features":"peaceful, health and wellness, vibrant"
+    },
+    {
+        "name":"Singapore 13",
+        "features":"beach, luxury, affordable"
+    },
+    {
+        "name":"Hong Kong 14",
+        "features":"family-friendly, shopping, culture"
+    },
+    {
+        "name":"Lisbon 15",
+        "features":"health and wellness, gastronomy, outdoor adventure"
+    },
+    {
+        "name":"Moscow 16",
+        "features":"nightlife, shopping, family-friendly"
+    },
+    {
+        "name":"Mumbai 17",
+        "features":"vibrant, wildlife safari, luxury travel"
+    },
+    {
+        "name":"Cape Town 18",
+        "features":"health and wellness, outdoor adventure, eco-tourism"
+    },
+    {
+        "name":"Rio de Janeiro 19",
+        "features":"health and wellness, shopping, beach"
+    },
+    {
+        "name":"Seoul 20",
+        "features":"history, romantic getaway, culture"
+    },
+    {
+        "name":"Dublin 21",
+        "features":"historical landmarks, beach, festivals"
+    },
+    {
+        "name":"Prague 22",
+        "features":"budget-friendly, nature, romantic getaway"
+    },
+    {
+        "name":"Vienna 23",
+        "features":"nightlife, adventure, peaceful retreats"
+    },
+    {
+        "name":"Budapest 24",
+        "features":"photography, romantic getaway, health and wellness"
+    },
+    {
+        "name":"Venice 25",
+        "features":"adventure, shopping, outdoor adventure"
+    },
+    {
+        "name":"Madrid 26",
+        "features":"budget-friendly, beach, affordable"
+    },
+    {
+        "name":"Buenos Aires 27",
+        "features":"adventure, luxury travel, wildlife safari"
+    },
+    {
+        "name":"Stockholm 28",
+        "features":"wildlife safari, solo travel, luxury travel"
+    },
+    {
+        "name":"Athens 29",
+        "features":"nightlife, culture, beach"
+    },
+    {
+        "name":"Istanbul 30",
+        "features":"vibrant, nightlife, family-friendly"
+    },
+    {
+        "name":"Copenhagen 31",
+        "features":"affordable, budget-friendly, nightlife"
+    },
+    {
+        "name":"Zurich 32",
+        "features":"romantic getaway, wildlife safari, luxury"
+    },
+    {
+        "name":"Helsinki 33",
+        "features":"shopping, festivals, nightlife"
+    },
+    {
+        "name":"Oslo 34",
+        "features":"budget-friendly, food, adventure"
+    },
+    {
+        "name":"Warsaw 35",
+        "features":"luxury, nightlife, gastronomy"
+    },
+    {
+        "name":"Krakow 36",
+        "features":"solo travel, wildlife safari, peaceful retreats"
+    },
+    {
+        "name":"Montreal 37",
+        "features":"adventure, outdoor adventure, shopping"
+    },
+    {
+        "name":"Toronto 38",
+        "features":"family-friendly, beach, solo travel"
+    },
+    {
+        "name":"Vancouver 39",
+        "features":"festivals, health and wellness, outdoor adventure"
+    },
+    {
+        "name":"Chicago 40",
+        "features":"culture, food, affordable"
+    },
+    {
+        "name":"San Francisco 41",
+        "features":"solo travel, beach, nightlife"
+    },
+    {
+        "name":"Los Angeles 42",
+        "features":"adventure, nightlife, shopping"
+    },
+    {
+        "name":"Las Vegas 43",
+        "features":"peaceful retreats, family-friendly, food"
+    },
+    {
+        "name":"Miami 44",
+        "features":"outdoor adventure, vibrant, luxury travel"
+    },
+    {
+        "name":"Boston 45",
+        "features":"adventure, vibrant, peaceful"
+    },
+    {
+        "name":"Mexico City 46",
+        "features":"luxury, budget-friendly, peaceful retreats"
+    },
+    {
+        "name":"Cancun 47",
+        "features":"history, nature, nightlife"
+    },
+    {
+        "name":"Cusco 48",
+        "features":"peaceful, nature, shopping"
+    },
+    {
+        "name":"Lima 49",
+        "features":"nightlife, health and wellness, solo travel"
+    },
+    {
+        "name":"Bogota 50",
+        "features":"luxury travel, peaceful, affordable"
+    },
+    {
+        "name":"Santiago 51",
+        "features":"luxury, gastronomy, peaceful"
+    },
+    {
+        "name":"Quito 52",
+        "features":"luxury travel, nightlife, wildlife safari"
+    },
+    {
+        "name":"Lagos 53",
+        "features":"solo travel, adventure, outdoor adventure"
+    },
+    {
+        "name":"Nairobi 54",
+        "features":"festivals, budget-friendly, nightlife"
+    },
+    {
+        "name":"Addis Ababa 55",
+        "features":"eco-tourism, history, food"
+    },
+    {
+        "name":"Marrakech 56",
+        "features":"historical landmarks, peaceful, nightlife"
+    },
+    {
+        "name":"Rabat 57",
+        "features":"eco-tourism, vibrant, history"
+    },
+    {
+        "name":"Casablanca 58",
+        "features":"adventure, luxury, food"
+    },
+    {
+        "name":"Accra 59",
+        "features":"peaceful retreats, historical landmarks, history"
+    },
+    {
+        "name":"Dakar 60",
+        "features":"shopping, photography, history"
+    },
+    {
+        "name":"Kigali 61",
+        "features":"luxury travel, romantic getaway, wildlife safari"
+    },
+    {
+        "name":"Zanzibar 62",
+        "features":"gastronomy, romantic getaway, festivals"
+    },
+    {
+        "name":"Antananarivo 63",
+        "features":"nature, peaceful retreats, romantic getaway"
+    },
+    {
+        "name":"Port Louis 64",
+        "features":"adventure, shopping, festivals"
+    },
+    {
+        "name":"Colombo 65",
+        "features":"photography, outdoor adventure, affordable"
+    },
+    {
+        "name":"Kathmandu 66",
+        "features":"shopping, affordable, luxury"
+    },
+    {
+        "name":"Hanoi 67",
+        "features":"peaceful retreats, budget-friendly, nightlife"
+    },
+    {
+        "name":"Ho Chi Minh City 68",
+        "features":"beach, shopping, culture"
+    },
+    {
+        "name":"Phnom Penh 69",
+        "features":"adventure, peaceful retreats, affordable"
+    },
+    {
+        "name":"Siem Reap 70",
+        "features":"festivals, nature, beach"
+    },
+    {
+        "name":"Manila 71",
+        "features":"vibrant, culture, peaceful"
+    },
+    {
+        "name":"Cebu 72",
+        "features":"outdoor adventure, shopping, vibrant"
+    },
+    {
+        "name":"Jakarta 73",
+        "features":"outdoor adventure, shopping, nature"
+    },
+    {
+        "name":"Bali 74",
+        "features":"family-friendly, luxury, gastronomy"
+    },
+    {
+        "name":"Kuala Lumpur 75",
+        "features":"romantic getaway, luxury travel, peaceful retreats"
+    },
+    {
+        "name":"Penang 76",
+        "features":"peaceful, budget-friendly, affordable"
+    },
+    {
+        "name":"Brunei 77",
+        "features":"history, shopping, wildlife safari"
+    },
+    {
+        "name":"Abu Dhabi 78",
+        "features":"affordable, historical landmarks, luxury"
+    },
+    {
+        "name":"Doha 79",
+        "features":"budget-friendly, festivals, health and wellness"
+    },
+    {
+        "name":"Muscat 80",
+        "features":"family-friendly, culture, historical landmarks"
+    },
+    {
+        "name":"Tel Aviv 81",
+        "features":"family-friendly, affordable, food"
+    },
+    {
+        "name":"Jerusalem 82",
+        "features":"eco-tourism, nightlife, peaceful"
+    },
+    {
+        "name":"Amman 83",
+        "features":"shopping, solo travel, eco-tourism"
+    },
+    {
+        "name":"Beirut 84",
+        "features":"family-friendly, culture, festivals"
+    },
+    {
+        "name":"Tbilisi 85",
+        "features":"culture, wildlife safari, outdoor adventure"
+    },
+    {
+        "name":"Baku 86",
+        "features":"festivals, outdoor adventure, historical landmarks"
+    },
+    {
+        "name":"Yerevan 87",
+        "features":"solo travel, culture, nature"
+    },
+    {
+        "name":"Astana 88",
+        "features":"affordable, eco-tourism, food"
+    },
+    {
+        "name":"Almaty 89",
+        "features":"peaceful retreats, adventure, budget-friendly"
+    },
+    {
+        "name":"Ulaanbaatar 90",
+        "features":"romantic getaway, outdoor adventure, wildlife safari"
+    },
+    {
+        "name":"Melbourne 91",
+        "features":"family-friendly, festivals, beach"
+    },
+    {
+        "name":"Brisbane 92",
+        "features":"romantic getaway, photography, history"
+    },
+    {
+        "name":"Perth 93",
+        "features":"nightlife, romantic getaway, peaceful"
+    },
+    {
+        "name":"Auckland 94",
+        "features":"festivals, solo travel, nightlife"
+    },
+    {
+        "name":"Christchurch 95",
+        "features":"outdoor adventure, food, nightlife"
+    },
+    {
+        "name":"Wellington 96",
+        "features":"shopping, beach, vibrant"
+    },
+    {
+        "name":"Fiji 97",
+        "features":"nature, luxury, beach"
+    },
+    {
+        "name":"Tahiti 98",
+        "features":"health and wellness, luxury travel, gastronomy"
+    },
+    {
+        "name":"Honolulu 99",
+        "features":"family-friendly, history, luxury travel"
+    },
+    {
+        "name":"Anchorage 100",
+        "features":"nightlife, festivals, peaceful"
+    },
+    {
+        "name":"Seattle 101",
+        "features":"peaceful, vibrant, festivals"
+    },
+    {
+        "name":"Portland 102",
+        "features":"peaceful retreats, gastronomy, nightlife"
+    },
+    {
+        "name":"Denver 103",
+        "features":"budget-friendly, beach, peaceful"
+    },
+    {
+        "name":"Atlanta 104",
+        "features":"luxury travel, culture, affordable"
+    },
+    {
+        "name":"New Orleans 105",
+        "features":"culture, nature, budget-friendly"
+    },
+    {
+        "name":"Austin 106",
+        "features":"shopping, nature, food"
+    },
+    {
+        "name":"Dallas 107",
+        "features":"family-friendly, outdoor adventure, affordable"
+    },
+    {
+        "name":"Houston 108",
+        "features":"shopping, wildlife safari, budget-friendly"
+    },
+    {
+        "name":"Minneapolis 109",
+        "features":"outdoor adventure, solo travel, luxury travel"
+    },
+    {
+        "name":"Philadelphia 110",
+        "features":"history, festivals, solo travel"
+    },
+    {
+        "name":"Washington D.C. 111",
+        "features":"affordable, history, nightlife"
+    },
+    {
+        "name":"Baltimore 112",
+        "features":"gastronomy, history, vibrant"
+    },
+    {
+        "name":"Detroit 113",
+        "features":"adventure, nightlife, festivals"
+    },
+    {
+        "name":"Phoenix 114",
+        "features":"wildlife safari, luxury travel, nightlife"
+    },
+    {
+        "name":"San Diego 115",
+        "features":"affordable, culture, festivals"
+    },
+    {
+        "name":"Salt Lake City 116",
+        "features":"family-friendly, peaceful, affordable"
+    },
+    {
+        "name":"Kansas City 117",
+        "features":"culture, nature, family-friendly"
+    },
+    {
+        "name":"Cleveland 118",
+        "features":"peaceful retreats, budget-friendly, nightlife"
+    },
+    {
+        "name":"Cincinnati 119",
+        "features":"luxury travel, beach, health and wellness"
+    },
+    {
+        "name":"Orlando 120",
+        "features":"peaceful retreats, family-friendly, beach"
+    },
+    {
+        "name":"Tampa 121",
+        "features":"historical landmarks, budget-friendly, food"
+    },
+    {
+        "name":"Charlotte 122",
+        "features":"luxury travel, photography, peaceful"
+    },
+    {
+        "name":"Raleigh 123",
+        "features":"food, photography, budget-friendly"
+    },
+    {
+        "name":"Richmond 124",
+        "features":"beach, vibrant, peaceful"
+    },
+    {
+        "name":"Indianapolis 125",
+        "features":"outdoor adventure, luxury, photography"
+    },
+    {
+        "name":"Milwaukee 126",
+        "features":"peaceful, beach, wildlife safari"
+    },
+    {
+        "name":"Providence 127",
+        "features":"luxury, peaceful, photography"
+    },
+    {
+        "name":"Pittsburgh 128",
+        "features":"photography, outdoor adventure, beach"
+    },
+    {
+        "name":"Ottawa 129",
+        "features":"health and wellness, festivals, peaceful"
+    },
+    {
+        "name":"Calgary 130",
+        "features":"solo travel, historical landmarks, food"
+    },
+    {
+        "name":"Edmonton 131",
+        "features":"nightlife, budget-friendly, history"
+    },
+    {
+        "name":"Winnipeg 132",
+        "features":"adventure, history, outdoor adventure"
+    },
+    {
+        "name":"Halifax 133",
+        "features":"luxury, family-friendly, affordable"
+    },
+    {
+        "name":"Quebec City 134",
+        "features":"nightlife, luxury travel, historical landmarks"
+    },
+    {
+        "name":"Hamilton 135",
+        "features":"adventure, shopping, nightlife"
+    },
+    {
+        "name":"London (Canada) 136",
+        "features":"peaceful retreats, history, wildlife safari"
+    },
+    {
+        "name":"Regina 137",
+        "features":"nightlife, peaceful, budget-friendly"
+    },
+    {
+        "name":"Victoria 138",
+        "features":"vibrant, photography, solo travel"
+    },
+    {
+        "name":"St. John's 139",
+        "features":"luxury, solo travel, food"
+    },
+    {
+        "name":"Reykjavik 140",
+        "features":"shopping, luxury, adventure"
+    },
+    {
+        "name":"Luxembourg City 141",
+        "features":"wildlife safari, history, luxury travel"
+    },
+    {
+        "name":"Brussels 142",
+        "features":"wildlife safari, festivals, nightlife"
+    },
+    {
+        "name":"Antwerp 143",
+        "features":"historical landmarks, adventure, luxury"
+    },
+    {
+        "name":"Ghent 144",
+        "features":"romantic getaway, nature, budget-friendly"
+    },
+    {
+        "name":"Rotterdam 145",
+        "features":"solo travel, family-friendly, history"
+    },
+    {
+        "name":"The Hague 146",
+        "features":"peaceful retreats, gastronomy, nightlife"
+    },
+    {
+        "name":"Utrecht 147",
+        "features":"vibrant, eco-tourism, adventure"
+    },
+    {
+        "name":"Cologne 148",
+        "features":"festivals, nightlife, beach"
+    },
+    {
+        "name":"Frankfurt 149",
+        "features":"wildlife safari, peaceful, food"
+    },
+    {
+        "name":"Munich 150",
+        "features":"peaceful, shopping, solo travel"
+    },
+    {
+        "name":"Hamburg 151",
+        "features":"luxury, nightlife, culture"
+    },
+    {
+        "name":"Dresden 152",
+        "features":"vibrant, peaceful, beach"
+    },
+    {
+        "name":"Leipzig 153",
+        "features":"shopping, family-friendly, outdoor adventure"
+    },
+    {
+        "name":"Stuttgart 154",
+        "features":"peaceful retreats, solo travel, wildlife safari"
+    },
+    {
+        "name":"Dusseldorf 155",
+        "features":"outdoor adventure, affordable, eco-tourism"
+    },
+    {
+        "name":"Gothenburg 156",
+        "features":"peaceful retreats, historical landmarks, family-friendly"
+    },
+    {
+        "name":"Malmo 157",
+        "features":"vibrant, family-friendly, culture"
+    },
+    {
+        "name":"Bergen 158",
+        "features":"history, culture, family-friendly"
+    },
+    {
+        "name":"Trondheim 159",
+        "features":"peaceful retreats, peaceful, beach"
+    },
+    {
+        "name":"Tromso 160",
+        "features":"historical landmarks, outdoor adventure, wildlife safari"
+    },
+    {
+        "name":"Vilnius 161",
+        "features":"family-friendly, adventure, budget-friendly"
+    },
+    {
+        "name":"Riga 162",
+        "features":"affordable, historical landmarks, culture"
+    },
+    {
+        "name":"Tallinn 163",
+        "features":"nature, festivals, vibrant"
+    },
+    {
+        "name":"Lviv 164",
+        "features":"vibrant, affordable, gastronomy"
+    },
+    {
+        "name":"Odessa 165",
+        "features":"history, shopping, budget-friendly"
+    },
+    {
+        "name":"Belgrade 166",
+        "features":"vibrant, luxury travel, peaceful retreats"
+    },
+    {
+        "name":"Sofia 167",
+        "features":"shopping, solo travel, nightlife"
+    },
+    {
+        "name":"Bucharest 168",
+        "features":"culture, history, festivals"
+    },
+    {
+        "name":"Ljubljana 169",
+        "features":"history, health and wellness, luxury"
+    },
+    {
+        "name":"Bratislava 170",
+        "features":"historical landmarks, wildlife safari, luxury"
+    },
+    {
+        "name":"Sarajevo 171",
+        "features":"vibrant, nightlife, eco-tourism"
+    },
+    {
+        "name":"Zagreb 172",
+        "features":"history, affordable, wildlife safari"
+    },
+    {
+        "name":"Split 173",
+        "features":"romantic getaway, beach, affordable"
+    },
+    {
+        "name":"Dubrovnik 174",
+        "features":"shopping, nightlife, food"
+    },
+    {
+        "name":"Podgorica 175",
+        "features":"luxury, history, food"
+    },
+    {
+        "name":"Skopje 176",
+        "features":"gastronomy, wildlife safari, culture"
+    },
+    {
+        "name":"Tirana 177",
+        "features":"gastronomy, luxury travel, adventure"
+    },
+    {
+        "name":"Chisinau 178",
+        "features":"luxury travel, history, shopping"
+    },
+    {
+        "name":"Valletta 179",
+        "features":"nightlife, eco-tourism, peaceful"
+    },
+    {
+        "name":"Nicosia 180",
+        "features":"gastronomy, nature, outdoor adventure"
+    },
+    {
+        "name":"Malaga 181",
+        "features":"affordable, nightlife, luxury"
+    },
+    {
+        "name":"Granada 182",
+        "features":"gastronomy, affordable, beach"
+    },
+    {
+        "name":"Seville 183",
+        "features":"historical landmarks, nightlife, luxury travel"
+    },
+    {
+        "name":"Bilbao 184",
+        "features":"solo travel, festivals, vibrant"
+    },
+    {
+        "name":"Valencia 185",
+        "features":"shopping, eco-tourism, beach"
+    },
+    {
+        "name":"Naples 186",
+        "features":"luxury, solo travel, eco-tourism"
+    },
+    {
+        "name":"Florence 187",
+        "features":"beach, adventure, wildlife safari"
+    },
+    {
+        "name":"Milan 188",
+        "features":"adventure, gastronomy, romantic getaway"
+    },
+    {
+        "name":"Turin 189",
+        "features":"history, festivals, family-friendly"
+    },
+    {
+        "name":"Genoa 190",
+        "features":"luxury travel, gastronomy, family-friendly"
+    },
+    {
+        "name":"Palermo 191",
+        "features":"luxury travel, shopping, health and wellness"
+    },
+    {
+        "name":"Catania 192",
+        "features":"nature, wildlife safari, health and wellness"
+    },
+    {
+        "name":"Bologna 193",
+        "features":"festivals, beach, adventure"
+    },
+    {
+        "name":"Lyon 194",
+        "features":"gastronomy, romantic getaway, affordable"
+    },
+    {
+        "name":"Marseille 195",
+        "features":"nightlife, peaceful retreats, shopping"
+    },
+    {
+        "name":"Nice 196",
+        "features":"peaceful, historical landmarks, wildlife safari"
+    },
+    {
+        "name":"Bordeaux 197",
+        "features":"peaceful retreats, luxury travel, beach"
+    },
+    {
+        "name":"Toulouse 198",
+        "features":"nature, historical landmarks, budget-friendly"
+    },
+    {
+        "name":"Strasbourg 199",
+        "features":"luxury, romantic getaway, nightlife"
+    },
+    {
+        "name":"Geneva 200",
+        "features":"solo travel, food, shopping"
+    },
+    {
+        "name":"Basel 201",
+        "features":"vibrant, eco-tourism, wildlife safari"
+    },
+    {
+        "name":"Bern 202",
+        "features":"food, historical landmarks, gastronomy"
+    },
+    {
+        "name":"Tokyo 2",
+        "features":"gastronomy, culture, nightlife"
+    },
+    {
+        "name":"London 3",
+        "features":"nightlife, outdoor adventure, nature"
+    },
+    {
+        "name":"New York 4",
+        "features":"history, nightlife, festivals"
+    },
+    {
+        "name":"Paris 5",
+        "features":"peaceful retreats, festivals, adventure"
+    },
+    {
+        "name":"Sydney 6",
+        "features":"affordable, solo travel, eco-tourism"
+    },
+    {
+        "name":"Rome 7",
+        "features":"nature, romantic getaway, history"
+    },
+    {
+        "name":"Amsterdam 8",
+        "features":"vibrant, peaceful retreats, wildlife safari"
+    },
+    {
+        "name":"Barcelona 9",
+        "features":"gastronomy, peaceful, history"
+    },
+    {
+        "name":"Berlin 10",
+        "features":"affordable, shopping, luxury"
+    },
+    {
+        "name":"Bangkok 11",
+        "features":"festivals, gastronomy, outdoor adventure"
+    },
+    {
+        "name":"Dubai 12",
+        "features":"shopping, nightlife, solo travel"
+    },
+    {
+        "name":"Singapore 13",
+        "features":"nightlife, eco-tourism, vibrant"
+    },
+    {
+        "name":"Hong Kong 14",
+        "features":"beach, adventure, health and wellness"
+    },
+    {
+        "name":"Lisbon 15",
+        "features":"luxury travel, romantic getaway, nightlife"
+    },
+    {
+        "name":"Moscow 16",
+        "features":"history, wildlife safari, photography"
+    },
+    {
+        "name":"Mumbai 17",
+        "features":"nightlife, food, beach"
+    },
+    {
+        "name":"Cape Town 18",
+        "features":"luxury, affordable, budget-friendly"
+    },
+    {
+        "name":"Rio de Janeiro 19",
+        "features":"food, health and wellness, shopping"
+    },
+    {
+        "name":"Seoul 20",
+        "features":"romantic getaway, history, family-friendly"
+    },
+    {
+        "name":"Dublin 21",
+        "features":"shopping, health and wellness, history"
+    },
+    {
+        "name":"Prague 22",
+        "features":"photography, peaceful, outdoor adventure"
+    },
+    {
+        "name":"Vienna 23",
+        "features":"beach, eco-tourism, historical landmarks"
+    },
+    {
+        "name":"Budapest 24",
+        "features":"luxury, peaceful, adventure"
+    },
+    {
+        "name":"Venice 25",
+        "features":"culture, nightlife, health and wellness"
+    },
+    {
+        "name":"Madrid 26",
+        "features":"eco-tourism, luxury, romantic getaway"
+    },
+    {
+        "name":"Buenos Aires 27",
+        "features":"culture, affordable, peaceful retreats"
+    },
+    {
+        "name":"Stockholm 28",
+        "features":"nightlife, romantic getaway, peaceful retreats"
+    },
+    {
+        "name":"Athens 29",
+        "features":"wildlife safari, eco-tourism, nature"
+    },
+    {
+        "name":"Istanbul 30",
+        "features":"photography, nature, culture"
+    },
+    {
+        "name":"Copenhagen 31",
+        "features":"outdoor adventure, romantic getaway, solo travel"
+    },
+    {
+        "name":"Zurich 32",
+        "features":"romantic getaway, nature, eco-tourism"
+    },
+    {
+        "name":"Helsinki 33",
+        "features":"peaceful retreats, adventure, budget-friendly"
+    },
+    {
+        "name":"Oslo 34",
+        "features":"outdoor adventure, solo travel, family-friendly"
+    },
+    {
+        "name":"Warsaw 35",
+        "features":"outdoor adventure, festivals, solo travel"
+    },
+    {
+        "name":"Krakow 36",
+        "features":"peaceful, affordable, health and wellness"
+    },
+    {
+        "name":"Montreal 37",
+        "features":"nature, romantic getaway, culture"
+    },
+    {
+        "name":"Toronto 38",
+        "features":"history, beach, historical landmarks"
+    },
+    {
+        "name":"Vancouver 39",
+        "features":"vibrant, nightlife, family-friendly"
+    },
+    {
+        "name":"Chicago 40",
+        "features":"peaceful, nightlife, health and wellness"
+    },
+    {
+        "name":"San Francisco 41",
+        "features":"peaceful retreats, photography, eco-tourism"
+    },
+    {
+        "name":"Los Angeles 42",
+        "features":"history, vibrant, photography"
+    },
+    {
+        "name":"Las Vegas 43",
+        "features":"solo travel, outdoor adventure, eco-tourism"
+    },
+    {
+        "name":"Miami 44",
+        "features":"luxury travel, festivals, budget-friendly"
+    },
+    {
+        "name":"Boston 45",
+        "features":"gastronomy, romantic getaway, peaceful"
+    },
+    {
+        "name":"Mexico City 46",
+        "features":"photography, beach, festivals"
+    },
+    {
+        "name":"Cancun 47",
+        "features":"luxury, culture, peaceful"
+    },
+    {
+        "name":"Cusco 48",
+        "features":"budget-friendly, luxury, peaceful retreats"
+    },
+    {
+        "name":"Lima 49",
+        "features":"solo travel, outdoor adventure, romantic getaway"
+    },
+    {
+        "name":"Bogota 50",
+        "features":"gastronomy, budget-friendly, luxury"
+    },
+    {
+        "name":"Santiago 51",
+        "features":"nature, culture, gastronomy"
+    },
+    {
+        "name":"Quito 52",
+        "features":"shopping, adventure, history"
+    },
+    {
+        "name":"Lagos 53",
+        "features":"peaceful retreats, gastronomy, wildlife safari"
+    },
+    {
+        "name":"Nairobi 54",
+        "features":"nightlife, outdoor adventure, beach"
+    },
+    {
+        "name":"Addis Ababa 55",
+        "features":"festivals, food, eco-tourism"
+    },
+    {
+        "name":"Marrakech 56",
+        "features":"wildlife safari, nightlife, nature"
+    },
+    {
+        "name":"Rabat 57",
+        "features":"history, peaceful retreats, family-friendly"
+    },
+    {
+        "name":"Casablanca 58",
+        "features":"adventure, affordable, solo travel"
+    },
+    {
+        "name":"Accra 59",
+        "features":"nightlife, gastronomy, nature"
+    },
+    {
+        "name":"Dakar 60",
+        "features":"festivals, gastronomy, photography"
+    },
+    {
+        "name":"Kigali 61",
+        "features":"romantic getaway, budget-friendly, history"
+    },
+    {
+        "name":"Zanzibar 62",
+        "features":"outdoor adventure, nature, budget-friendly"
+    },
+    {
+        "name":"Antananarivo 63",
+        "features":"solo travel, affordable, beach"
+    },
+    {
+        "name":"Port Louis 64",
+        "features":"health and wellness, nature, wildlife safari"
+    },
+    {
+        "name":"Colombo 65",
+        "features":"gastronomy, peaceful retreats, luxury"
+    },
+    {
+        "name":"Kathmandu 66",
+        "features":"nightlife, gastronomy, health and wellness"
+    },
+    {
+        "name":"Hanoi 67",
+        "features":"luxury, photography, nightlife"
+    },
+    {
+        "name":"Ho Chi Minh City 68",
+        "features":"vibrant, adventure, nature"
+    },
+    {
+        "name":"Phnom Penh 69",
+        "features":"vibrant, gastronomy, photography"
+    },
+    {
+        "name":"Siem Reap 70",
+        "features":"food, festivals, wildlife safari"
+    },
+    {
+        "name":"Manila 71",
+        "features":"adventure, food, affordable"
+    },
+    {
+        "name":"Cebu 72",
+        "features":"luxury travel, history, nature"
+    },
+    {
+        "name":"Jakarta 73",
+        "features":"peaceful retreats, solo travel, family-friendly"
+    },
+    {
+        "name":"Bali 74",
+        "features":"budget-friendly, family-friendly, luxury"
+    },
+    {
+        "name":"Kuala Lumpur 75",
+        "features":"nightlife, vibrant, romantic getaway"
+    },
+    {
+        "name":"Penang 76",
+        "features":"family-friendly, nightlife, solo travel"
+    },
+    {
+        "name":"Brunei 77",
+        "features":"solo travel, peaceful, romantic getaway"
+    },
+    {
+        "name":"Abu Dhabi 78",
+        "features":"nightlife, health and wellness, affordable"
+    },
+    {
+        "name":"Doha 79",
+        "features":"nightlife, culture, photography"
+    },
+    {
+        "name":"Muscat 80",
+        "features":"nightlife, photography, history"
+    },
+    {
+        "name":"Tel Aviv 81",
+        "features":"shopping, festivals, gastronomy"
+    },
+    {
+        "name":"Jerusalem 82",
+        "features":"gastronomy, shopping, photography"
+    },
+    {
+        "name":"Amman 83",
+        "features":"photography, food, nightlife"
+    },
+    {
+        "name":"Beirut 84",
+        "features":"wildlife safari, festivals, beach"
+    },
+    {
+        "name":"Tbilisi 85",
+        "features":"luxury travel, nightlife, romantic getaway"
+    },
+    {
+        "name":"Baku 86",
+        "features":"health and wellness, affordable, history"
+    },
+    {
+        "name":"Yerevan 87",
+        "features":"outdoor adventure, vibrant, eco-tourism"
+    },
+    {
+        "name":"Astana 88",
+        "features":"family-friendly, peaceful, gastronomy"
+    },
+    {
+        "name":"Almaty 89",
+        "features":"food, history, budget-friendly"
+    },
+    {
+        "name":"Ulaanbaatar 90",
+        "features":"romantic getaway, nature, luxury travel"
+    },
+    {
+        "name":"Melbourne 91",
+        "features":"food, health and wellness, gastronomy"
+    },
+    {
+        "name":"Brisbane 92",
+        "features":"photography, peaceful, history"
+    },
+    {
+        "name":"Perth 93",
+        "features":"health and wellness, outdoor adventure, beach"
+    },
+    {
+        "name":"Auckland 94",
+        "features":"budget-friendly, culture, luxury"
+    },
+    {
+        "name":"Christchurch 95",
+        "features":"nightlife, luxury, historical landmarks"
+    },
+    {
+        "name":"Wellington 96",
+        "features":"romantic getaway, food, eco-tourism"
+    },
+    {
+        "name":"Fiji 97",
+        "features":"historical landmarks, photography, wildlife safari"
+    },
+    {
+        "name":"Tahiti 98",
+        "features":"health and wellness, luxury, budget-friendly"
+    },
+    {
+        "name":"Honolulu 99",
+        "features":"food, peaceful, budget-friendly"
+    }
 ]
