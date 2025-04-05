@@ -18,3 +18,12 @@ def rank_destinations(preferences):
 
     sorted_destinations = sorted(scores, key=lambda x: x[1], reverse=True)
     return sorted_destinations[:3]
+
+# agents/destination_agent.py
+def run(state):
+    if not state.persona:
+        return []
+
+    matches = rank_destinations(state.persona)  # Custom logic or another model
+    state.destination_scores = matches
+    return matches

@@ -1,37 +1,23 @@
 # app.py
 import streamlit as st
-from agents.persona_agent import analyze_preferences
-from agents.destination_agent import rank_destinations
-from agents.itinerary_agent import generate_itinerary
-from agents.culture_agent import cultural_tips
-from agents.packing_agent import generate_packing_list
+from langchain_agents.agent_controller import run_agent_chain
 
-st.title("✈️ TravelGenie MAS 🌍")
+st.title("🧳 TravelGenie – Multi-Agent Trip Planner")
 
-user_input = st.text_area("Describe your dream trip:")
+user_input = st.text_area("Describe your ideal trip:")
 
-if st.button("Plan My Trip!"):
-    with st.spinner("Analyzing your preferences..."):
-        prefs = analyze_preferences(user_input)
-        st.write("### ✅ Your Top Preferences:", prefs)
+if st.button("Let the AI Plan"):
+    with st.spinner("Thinking..."):
+        response = run_agent_chain(user_input)
+    st.success("Plan Generated!")
+    st.write(response)
 
-    with st.spinner("Finding best destinations..."):
-        top_dests = rank_destinations(prefs)
-        st.write("### 🏖️ Top Destination Matches:", top_dests)
+days = st.slider("Trip Length (Days)", 1, 30, 5)
+mood = st.selectbox("Preferred Vibe", ["Relaxing", "Adventurous", "Cultural"])
 
-    selected_destination = top_dests[0][0]
+# Combine into a formatted prompt
+combined_input = f"My trip should be {mood.lower()} and last {days} days. {user_input}"
 
-    with st.spinner("Crafting itinerary..."):
-        itinerary = generate_itinerary(selected_destination, prefs)
-        st.write(f"## 📅 Itinerary for {selected_destination}:")
-        st.write(itinerary)
-
-    with st.spinner("Gathering cultural tips..."):
-        culture = cultural_tips(selected_destination)
-        st.write(f"## 🌍 Cultural Insights for {selected_destination}:")
-        st.write(culture)
-
-    with st.spinner("Preparing packing suggestions..."):
-        packing = generate_packing_list(selected_destination, prefs)
-        st.write(f"## 🧳 Packing Suggestions:")
-        st.write(packing)
+if st.button("Plan with Custom Vibe"):
+    response = run_agent_chain(combined_input)
+    st.write(response)
