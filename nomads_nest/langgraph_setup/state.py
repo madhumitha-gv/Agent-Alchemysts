@@ -8,7 +8,8 @@ class TripState(TypedDict, total=False):
     top_destination: str
     all_recommendations: List[dict] 
     current_rec_index: int           
-    weather_check_result: str        
+    weather_check_result: str
+    weather_log: List[Dict[str, Optional[str]]]
     itinerary: str
     culture_tips: str
     packing_list: str

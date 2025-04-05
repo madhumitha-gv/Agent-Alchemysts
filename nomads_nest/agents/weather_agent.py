@@ -1,7 +1,7 @@
 from utils.weather_utils import get_current_weather
 from utils.weather_api import fetch_apparent_temperature
 
-HARSH_CONDITIONS = {"freezing", "very hot"}
+HARSH_CONDITIONS = {"freezing", "very hot", "hot","cold","chilly"}
 
 def run(state):
     index = state["current_rec_index"]

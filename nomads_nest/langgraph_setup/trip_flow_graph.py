@@ -17,7 +17,13 @@ def build_trip_graph():
     builder.add_node("generate_itinerary", generate_itinerary)
     builder.add_node("provide_cultural_tips", provide_cultural_tips)
     builder.add_node("generate_packing_list", generate_packing_list)
-    builder.add_node("fail", lambda state: {"message": "No destination with suitable weather found."})
+    builder.add_node("fail", lambda state: {
+    **state,
+    "message": "❌ All destinations had harsh weather. Try again with different preferences.",
+    "itinerary": "Could not generate itinerary due to poor weather.",
+    "culture_tips": "No tips available.",
+    "packing_list": "No packing list generated."
+})
 
     builder.set_entry_point("analyze_persona")
     builder.add_edge("analyze_persona", "recommend_destinations")
