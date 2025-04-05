@@ -1,37 +1,32 @@
-# app.py
 import streamlit as st
-from agents.persona_agent import analyze_preferences
-from agents.destination_agent import rank_destinations
-from agents.itinerary_agent import generate_itinerary
-from agents.culture_agent import cultural_tips
-from agents.packing_agent import generate_packing_list
+from langgraph_setup.run_graph import run_trip_planner
 
-st.title("✈️ TravelGenie MAS 🌍")
+st.set_page_config(page_title="🧳 TravelGenie – LangGraph Edition", layout="wide")
 
-user_input = st.text_area("Describe your dream trip:")
+st.title("🧳 TravelGenie – AI-Powered Trip Planner (LangGraph)")
 
-if st.button("Plan My Trip!"):
-    with st.spinner("Analyzing your preferences..."):
-        prefs = analyze_preferences(user_input)
-        st.write("### ✅ Your Top Preferences:", prefs)
+user_input = st.text_area("Describe your ideal trip:", placeholder="e.g. I want a relaxing beach trip with local food and cultural activities.")
 
-    with st.spinner("Finding best destinations..."):
-        top_dests = rank_destinations(prefs)
-        st.write("### 🏖️ Top Destination Matches:", top_dests)
+if st.button("Plan My Trip"):
+    if not user_input.strip():
+        st.warning("Please describe your trip preferences before generating a plan.")
+    else:
+        with st.spinner("Planning your adventure..."):
+            result = run_trip_planner(user_input)
 
-    selected_destination = top_dests[0][0]
+        st.success("Here’s your personalized trip plan! 🌍")
 
-    with st.spinner("Crafting itinerary..."):
-        itinerary = generate_itinerary(selected_destination, prefs)
-        st.write(f"## 📅 Itinerary for {selected_destination}:")
-        st.write(itinerary)
+        st.subheader("🧠 Your Travel Preferences")
+        st.write(result.get("persona", "Not detected."))
 
-    with st.spinner("Gathering cultural tips..."):
-        culture = cultural_tips(selected_destination)
-        st.write(f"## 🌍 Cultural Insights for {selected_destination}:")
-        st.write(culture)
+        st.subheader("📍 Recommended Destination")
+        st.write(result.get("top_destination", "No destination found."))
 
-    with st.spinner("Preparing packing suggestions..."):
-        packing = generate_packing_list(selected_destination, prefs)
-        st.write(f"## 🧳 Packing Suggestions:")
-        st.write(packing)
+        st.subheader("📅 Suggested Itinerary")
+        st.text(result.get("itinerary", "No itinerary generated."))
+
+        st.subheader("🌍 Cultural Tips")
+        st.write(result.get("culture_tips", "No cultural information available."))
+
+        st.subheader("🎒 Packing List")
+        st.text(result.get("packing_list", "No packing list generated."))
