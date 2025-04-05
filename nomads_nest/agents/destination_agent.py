@@ -1,24 +1,38 @@
-
 # agents/destination_agent.py
+
 import json
 from sentence_transformers import SentenceTransformer, util
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-with open('data/destinations.json') as f:
+with open('data/top_500_cities.json') as f:
     destinations = json.load(f)
-
 def run(state):
     if "persona" not in state:
         return []
 
-    user_embedding = model.encode(", ".join(state["persona"]))
-    scores = []
+    user_embedding = model.encode(", ".join(state["persona"]), normalize_embeddings=True)
+    scored_destinations = []
+
     for dest in destinations:
-        dest_embedding = model.encode(dest["features"])
+        if not dest.get("features") or "lat" not in dest or "lng" not in dest:
+            continue  # Skip incomplete entries
+
+        dest_embedding = model.encode(dest["features"], normalize_embeddings=True)
         sim_score = util.cos_sim(user_embedding, dest_embedding).item()
-        scores.append((dest["name"], sim_score))
 
-    sorted_destinations = sorted(scores, key=lambda x: x[1], reverse=True)
+        scored_destinations.append({
+            "name": dest["city"],
+            "score": sim_score,
+            "lat": dest["lat"],
+            "lng": dest["lng"],
+            "country": dest.get("country", "Unknown"),
+            "features": dest["features"]
+        })
+
+    if not scored_destinations:
+        print("⚠️ No destination matches found.")
+        return []
+
+    sorted_destinations = sorted(scored_destinations, key=lambda x: x["score"], reverse=True)
     return sorted_destinations[:3]
-
