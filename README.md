@@ -1,2 +1,2 @@
 # Agent-Alchemysts
-ETL Agents
+Multi-agent travel planner
