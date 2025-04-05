@@ -1,23 +1,32 @@
-# app.py
 import streamlit as st
-from langchain_agents.agent_controller import run_agent_chain
+from langgraph_setup.run_graph import run_trip_planner
 
-st.title("🧳 TravelGenie – Multi-Agent Trip Planner")
+st.set_page_config(page_title="🧳 TravelGenie – LangGraph Edition", layout="wide")
 
-user_input = st.text_area("Describe your ideal trip:")
+st.title("🧳 TravelGenie – AI-Powered Trip Planner (LangGraph)")
 
-if st.button("Let the AI Plan"):
-    with st.spinner("Thinking..."):
-        response = run_agent_chain(user_input)
-    st.success("Plan Generated!")
-    st.write(response)
+user_input = st.text_area("Describe your ideal trip:", placeholder="e.g. I want a relaxing beach trip with local food and cultural activities.")
 
-days = st.slider("Trip Length (Days)", 1, 30, 5)
-mood = st.selectbox("Preferred Vibe", ["Relaxing", "Adventurous", "Cultural"])
+if st.button("Plan My Trip"):
+    if not user_input.strip():
+        st.warning("Please describe your trip preferences before generating a plan.")
+    else:
+        with st.spinner("Planning your adventure..."):
+            result = run_trip_planner(user_input)
 
-# Combine into a formatted prompt
-combined_input = f"My trip should be {mood.lower()} and last {days} days. {user_input}"
+        st.success("Here’s your personalized trip plan! 🌍")
 
-if st.button("Plan with Custom Vibe"):
-    response = run_agent_chain(combined_input)
-    st.write(response)
+        st.subheader("🧠 Your Travel Preferences")
+        st.write(result.get("persona", "Not detected."))
+
+        st.subheader("📍 Recommended Destination")
+        st.write(result.get("top_destination", "No destination found."))
+
+        st.subheader("📅 Suggested Itinerary")
+        st.text(result.get("itinerary", "No itinerary generated."))
+
+        st.subheader("🌍 Cultural Tips")
+        st.write(result.get("culture_tips", "No cultural information available."))
+
+        st.subheader("🎒 Packing List")
+        st.text(result.get("packing_list", "No packing list generated."))

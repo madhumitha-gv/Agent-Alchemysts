@@ -1,21 +1,41 @@
-# langchain_agents/tools.py
 from langchain.agents import Tool
-from agents import persona_agent, destination_agent, itinerary_agent
+from agents import (
+    persona_agent,
+    destination_agent,
+    itinerary_agent,
+    culture_agent,
+    packing_agent
+)
+
+from shared_state import SharedState
+
+# Create a reusable state instance (can be passed if needed)
+state = SharedState()
 
 tools = [
     Tool(
-        name="Persona Analyzer",
-        func=lambda x: persona_agent.run(None, x),  # You can wire in shared_state later
-        description="Classifies the user's travel preferences based on a sentence"
+        name="AnalyzePersona",
+        func=lambda x: persona_agent.run(state, x),
+        description="Analyze the user's travel preferences and return a list of interests."
     ),
     Tool(
-        name="Destination Recommender",
-        func=lambda _: destination_agent.run(None),  # Assumes persona already exists in state
-        description="Recommends destinations based on travel preferences"
+        name="RecommendDestination",
+        func=lambda _: destination_agent.run(state),
+        description="Recommend top travel destinations based on the persona."
     ),
     Tool(
-        name="Itinerary Generator",
-        func=lambda _: itinerary_agent.run(None, num_days=5),
-        description="Generates a 5-day itinerary for the selected destination"
+        name="GenerateItinerary",
+        func=lambda _: itinerary_agent.run(state, num_days=2),  # you can parameterize days if needed
+        description="Generate a 2-day itinerary for the top destination and preferences."
+    ),
+    Tool(
+        name="ProvideCulturalTips",
+        func=lambda x: culture_agent.cultural_tips(x),
+        description="Provide cultural etiquette and tips for the destination."
+    ),
+    Tool(
+        name="GeneratePackingList",
+        func=lambda x: packing_agent.generate_packing_list(x, state["persona"] or []),
+        description="Generate a packing list based on the destination and preferences."
     )
 ]
