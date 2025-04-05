@@ -13,7 +13,7 @@ from utils.weather_api import fetch_apparent_temperature
 from utils.weather_utils import get_current_weather
 
 # Define harsh weather conditions that should trigger backtracking
-HARSH_CONDITIONS = {"freezing", "very hot", "hot", "cold"}
+HARSH_CONDITIONS = {"freezing", "very hot", "cold"}
 
 # Step 1: Analyze user input to extract persona/preferences
 def analyze_persona(state: dict) -> dict:
@@ -41,7 +41,7 @@ def recommend_destinations(state: dict) -> dict:
 
     return state
 
-# Step 3: Check weather for each recommended destination
+# Step 3: Check weather with backtracking if harsh
 def check_weather(state: dict) -> dict:
     recs = state.get("all_recommendations", [])
     index = state.get("current_rec_index", 0)
@@ -57,22 +57,35 @@ def check_weather(state: dict) -> dict:
 
     print(f"Checking weather at {destination['name']}: {condition}")
 
+    # ✅ Ensure weather_log is initialized
+    if "weather_log" not in state:
+        state["weather_log"] = []
+
+    # ✅ Log this destination's weather outcome
+    state["weather_log"].append({
+        "city": destination["name"],
+        "temperature": temp,
+        "condition": condition,
+        "skipped": condition in HARSH_CONDITIONS
+    })
+
     if condition in HARSH_CONDITIONS:
         state["current_rec_index"] += 1
         state["weather_check_result"] = "harsh"
     else:
         state["final_destination"] = destination
-        state["top_destination"] = destination["name"]  # ✅ This line is critical!
+        state["top_destination"] = destination["name"]
         state["weather_check_result"] = "ok"
+        state["weather_log"]
 
     return state
 
-# Step 4: Generate itinerary based on selected destination
+# Step 4: Generate itinerary
 def generate_itinerary(state: dict) -> dict:
     state["itinerary"] = itinerary_agent.run(state, num_days=2)
     return state
 
-# Step 5: Provide cultural tips for the destination
+# Step 5: Provide cultural tips
 def provide_cultural_tips(state: dict) -> dict:
     state["culture_tips"] = culture_agent.cultural_tips(state["top_destination"])
     return state
@@ -82,4 +95,5 @@ def generate_packing_list(state: dict) -> dict:
     state["packing_list"] = packing_agent.generate_packing_list(
         state["top_destination"], state.get("persona", [])
     )
+    print("🧾 Weather log so far:", state.get("weather_log", "No weather log available."))
     return state
