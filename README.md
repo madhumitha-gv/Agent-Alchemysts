@@ -2,8 +2,8 @@
 
 Nomads Nest is a **multi-agent travel assistant** that intelligently understands user preferences and suggests top destinations tailored to their tastes. It evaluates weather conditions, plans detailed itineraries, provides cultural insights, and even generates a personalized packing list — all automatically. 🌍✈️
 
-### 🎬 Video Demo
-[Google Drive Link](#)
+### 🎬 Video Demo 
+## Google Drive Link [Google Drive Link](#)
 
 ## 🚀 Tech Stack
 
@@ -16,7 +16,7 @@ Nomads Nest is a **multi-agent travel assistant** that intelligently understands
 - **Transformers (Hugging Face Models)** 🤖 (GPT-Neo 1.3B, all-MiniLM-L6-v2, Mistral-7B)
 - **LangGraph** 🔗
 
-## 👨‍💻 Team Members
+## 👥 Team Members
 - **Anmol Munnolli** 👨‍💻
 - **Vishwajyothi Reshmi** 👩‍💻
 - **Madhumitha Gannavaram** 👩‍💻
@@ -45,3 +45,16 @@ The architecture will consist of:
 First, create a virtual environment for the project by running the following command in your terminal:
 ```bash
 python -m venv venv
+```bash
+  .\venv\Scripts\activate
+``bash
+### **3. Install Dependencies**
+- Install the required packages listed in requirements.txt
+   pip install -r requirements.txt
+```bash
+### **4. Run the Backend**
+- After setting up the virtual environment and installing the dependencies, run the agent_controller.py file
+### **5. Run the Frontend**
+- To start the frontend using Streamlit, run the app.py file:
+```bash
+   streamlit run app.py
