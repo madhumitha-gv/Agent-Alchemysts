@@ -41,20 +41,27 @@ The architecture will consist of:
 
 ## 🛠️ How to Run the Project
 
-### 1. Set up a Virtual Environment
-First, create a virtual environment for the project by running the following command in your terminal:
+### **1. Create a Virtual Environment**
 ```bash
 python -m venv venv
+```
+
+### **2. Activate the Virtual Environment**
 ```bash
-  .\venv\Scripts\activate
-``bash
+.env\Scriptsctivate
+```
+
 ### **3. Install Dependencies**
-- Install the required packages listed in requirements.txt
-   pip install -r requirements.txt
+- Install the required packages listed in `requirements.txt`:
 ```bash
+pip install -r requirements.txt
+```
+
 ### **4. Run the Backend**
-- After setting up the virtual environment and installing the dependencies, run the agent_controller.py file
+- After setting up the virtual environment and installing the dependencies, run the `agent_controller.py` file.
+
 ### **5. Run the Frontend**
-- To start the frontend using Streamlit, run the app.py file:
+- To start the frontend using Streamlit, run the `app.py` file:
 ```bash
-   streamlit run app.py
+streamlit run app.py
+```
