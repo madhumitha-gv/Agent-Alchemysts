@@ -1,4 +1,5 @@
 # langgraph_setup/nodes.py
+from logger import log
 
 from agents import (
     persona_agent,
@@ -13,10 +14,11 @@ from utils.weather_api import fetch_apparent_temperature
 from utils.weather_utils import get_current_weather
 
 # Define harsh weather conditions that should trigger backtracking
-HARSH_CONDITIONS = {"freezing", "very hot"}
+HARSH_CONDITIONS = {"hot","cold"}
 
 # Step 1: Analyze user input to extract persona/preferences
 def analyze_persona(state: dict) -> dict:
+    log("🧠 Analyzing persona...")
     preferences = persona_agent.run(state, state["user_input"])
     state["persona"] = preferences
     return state
