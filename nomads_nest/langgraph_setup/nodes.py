@@ -14,7 +14,7 @@ from utils.weather_api import fetch_apparent_temperature
 from utils.weather_utils import get_current_weather
 
 # Define harsh weather conditions that should trigger backtracking
-HARSH_CONDITIONS = {"hot","cold"}
+HARSH_CONDITIONS = {"very hot","freezing","hot","cold"}
 
 # Step 1: Analyze user input to extract persona/preferences
 def analyze_persona(state: dict) -> dict:
