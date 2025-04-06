@@ -21,7 +21,7 @@ Nomads Nest is a **multi-agent travel assistant** that intelligently understands
 - **Vishwajyothi Reshmi** 👩‍💻
 - **Madhumitha Gannavaram** 👩‍💻
 
-## 💡 Features & Design
+## 💡 Design
 
 The architecture will consist of:
 
