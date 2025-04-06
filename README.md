@@ -5,30 +5,19 @@ Nomads Nest is a **multi-agent travel assistant** that intelligently understands
 ### 🎬 Video Demo 
 ## Google Drive Link [Google Drive Link](#)
 
-## 🚀 Tech Stack
-
-### Frontend:
-- **Python** 🐍
-- **Streamlit** 📊
-
-### Backend:
-- **Pytorch** 🔥
-- **Transformers (Hugging Face Models)** 🤖 (GPT-Neo 1.3B, all-MiniLM-L6-v2, Mistral-7B)
-- **LangGraph** 🔗
-
 ## 👥 Team Members
 - **Anmol Munnolli** 👨‍💻
 - **Vishwajyothi Reshmi** 👩‍💻
 - **Madhumitha Gannavaram** 👩‍💻
 
-## 💡 Design
+## 💡 Architecture
 
 The architecture will consist of:
 
-### Frontend:
+### UI/UX Design 🎨
 - **Streamlit** (Python-based web app) to interact with users.
 
-### Backend:
+### Backend Design🔧
 - **Agents** powered by **Hugging Face**, **LangGraph** for agent communication and logic flow.
 
 ### Agents:
