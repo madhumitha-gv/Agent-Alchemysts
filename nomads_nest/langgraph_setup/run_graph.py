@@ -13,7 +13,7 @@ def run_trip_planner(user_input: str):
             values = list(step.values())
             if values:
                 final_state = values[0]  # extract just the state
-                log(f"✅ Step output captured: {list(step.keys())[0]}")
+                log(f"🤖 Step output captured: {list(step.keys())[0]}")
             else:
                 log("⚠️ No values in step")
         else:
