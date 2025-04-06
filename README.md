@@ -34,11 +34,9 @@ The architecture will consist of:
 ```bash
 python -m venv venv
 ```
-
 ### **2. Activate the Virtual Environment**
 ```bash
-.env\Scriptsctivate
-```
+.\\env\Scripts\activate
 
 ### **3. Install Dependencies**
 - Install the required packages listed in `requirements.txt`:
