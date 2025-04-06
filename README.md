@@ -1,94 +1,72 @@
-# **Nomads Nest**
 
-## **Problem Statement**
+# Nomads Next- Agentic Travel Buddy
+[image]
 
-
-
-
-
-## Video Demo [Link]
-## Google Drive Link [Link]
-
-## **Tech Required**
-
-### **1. Analytical Skills**
-- **Data Analysis**:
-  - 
-- **Statistical Analysis**:
-  - 
-
-### **2. Artificial Intelligence (AI)**
-- *
-
-### **3. Machine Learning Algorithms**
-- **Classification Models**:
-  - Apply machine learning techniques for trend analysis across industries and KPIs.
-- **Recommendation Systems**:
-  - Leverage collaborative and content-based filtering for personalized insights.
-
-## **Tech Stack**
-
-### **Frontend**
-- **Streamlit**
-- **HuggingFace Transformers**
-- **LangGraph**
-
-### **Backend**
-- **Flask**
-- **Transformers** (Hugging Face models) (Meta llama, Google flan-t5)
-- **Pandas**
+Nomad Nest is a multi-agent travel assistant that intelligently understands user preferences and suggests top destinations tailored to their tastes. It evaluates weather conditions, plans detailed itineraries, provides cultural insights, and even generates a personalized packing list — all automatically.
 
 
-## **Project Team Members**
-- **Anmol Munnolli**
-- **Vishwajyothi Reshmi**
-- **Venkata Madhumitha Gannavaram**  
-
-## Summary  
-**NomadsNest** is a mutli agentic AI platform that assists people plan their dream destinations
-
-## Key Features  
-
-### 1. Compare with Industry Benchmarks  
-- 
-
-### 2. Personalized Recommendations  
-- =
-
-### 3. Forecast Future Trends  
-- 
-
-### 4. Sentiment Analysis  
-- 
-
-### 5. Visualize Your Data  
+## Video Demo
+## Google Drive Link
+## Tech Stack
+Frontend
+- Python
+- Streamlit
+- Pytorch
+Backend
+- Transformers(Hugging face models)(gpt-neo-1.3B,all-MiniLM-L6-v2,Mistral-7B-)
+- Langgraph
 
 
-### 6. Flexible and Versatile  
--
+## Team Members
+- Anmol Munnolli
+- Vishwajyothi Reshmi
+- Madhumitha Gannavaram
 
-**** 
+## Team Members
+- Anmol Munnolli
+- Vishwajyothi Reshmi
+- Madhumitha Gannavaram
 
-  
+### **Features & Design**
+The architecture will consist of:
+
+- Frontend: Streamlit (Python-based web app) to interact with users.
+
+- Backend: Agents (AI models like GPT-Neo, Mistral-7B) powered by Hugging Face, LangGraph for agent communication and logic flow.
+
+Agents:
+
+- Persona Agent: Handles user preferences, budget, interests.
+
+- Destination Agent: Recommends travel destinations based on persona.
+
+- Itinerary Agent: Suggests travel itineraries based on destination.
+
+- Culture Agent: Provides insights into local culture, food, etc.
+
+- Packing Agent: Helps users decide what to pack.
+
+- Weather Agent: Checks weather conditions and provides feedback on destinations.
+
 ## **How to Run the Project**
 
 ### **1. Set up a Virtual Environment**
 - First, create a virtual environment for the project by running the following command in your terminal:
-  ```bash
+```bash
   python -m venv venv
 ### **2. Activate the Virtual Environment**
 - On **Windows**:
-  ```bash
+```bash
   .\venv\Scripts\activate
 ### **3. Install Dependencies**
 - Install the required packages listed in requirements.txt:
-  ```bash
+```bash
    pip install -r requirements.txt
 ### **4. Run the Backend**
-- After setting up the virtual environment and installing the dependencies, run the backend-logic.py file:
-  ```bash
-   python ./backend/agents.py
+```bash
+- After setting up the virtual environment and installing the dependencies, run the agent_controller.py file
 ### **5. Run the Frontend**
 - To start the frontend using Streamlit, run the app.py file:
-   ```bash
+```bash
    streamlit run app.py
+
