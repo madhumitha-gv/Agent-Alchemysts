@@ -3,7 +3,6 @@
 Nomads Nest is a **multi-agent travel assistant** that intelligently understands user preferences and suggests top destinations tailored to their tastes. It evaluates weather conditions, plans detailed itineraries, provides cultural insights, and even generates a personalized packing list — all automatically. 🌍✈️
 
 ### 🎬 Video Demo 
-### Google Drive Link
 
 ## 👥 Team members
 - **Anmol Munnolli** 👨‍💻
