@@ -1,4 +1,4 @@
-# import streamlit as st
+#import streamlit as st
 # import pandas as pd
 # import time
 # import threading
@@ -441,7 +441,9 @@
 #         else:
 #             st.error("Something went wrong — no result returned.")
 
-
+import torch
+if not hasattr(torch, "__path__"):
+    torch.__path__ = []
 import streamlit as st
 import pandas as pd
 import time
@@ -566,7 +568,7 @@ with left_col:
 
 with middle_col:
     st.markdown("<p class='section-title'>What’s Your Next Destination?</p>", unsafe_allow_html=True)
-    user_input = st.text_area("", placeholder="e.g. A cozy mountain escape with hiking and stargazing.", height=150)
+    user_input = st.text_area("Trip preferences", placeholder="....", height=150, label_visibility="collapsed")
     start_button = st.button("Let’s Plan")
 
 with right_col:
@@ -580,10 +582,17 @@ with right_col:
     G.add_edge("generate_itinerary", "provide_cultural_tips")
     G.add_edge("provide_cultural_tips", "generate_packing_list")
     G.add_edge("fail", "provide_cultural_tips")
-    plt.figure(figsize=(10, 8))
+
+    fig, ax = plt.subplots(figsize=(10, 8))  # Corrected here
     pos = nx.spring_layout(G, seed=42)
-    nx.draw(G, pos, with_labels=True, node_size=3000, node_color="#a5d6a7", font_size=10, font_weight='bold', edge_color="#388e3c", width=2, arrows=True)
-    st.pyplot(plt)
+    nx.draw(
+        G, pos, ax=ax, with_labels=True,
+        node_size=3000, node_color="#a5d6a7",
+        font_size=10, font_weight='bold',
+        edge_color="#388e3c", width=2, arrows=True
+    )
+    st.pyplot(fig)
+
 
 # ---- Process on Button ----
 if start_button:

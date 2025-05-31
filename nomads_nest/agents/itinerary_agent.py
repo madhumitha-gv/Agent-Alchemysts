@@ -16,11 +16,12 @@
 from dotenv import load_dotenv
 import os
 load_dotenv() 
-HUGGINGFACEHUB_API_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 
 from huggingface_hub import InferenceClient
-
-client = InferenceClient(model="mistralai/Mistral-7B-Instruct-v0.1", token=HUGGINGFACEHUB_API_TOKEN)
+client = InferenceClient(
+    model="mistralai/Mistral-7B-Instruct-v0.3",
+    token= "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" # Replace with your token if needed
+)
 def run(state, num_days=2):
     if "top_destination" not in state or not state["top_destination"]:
         return "No destination selected."

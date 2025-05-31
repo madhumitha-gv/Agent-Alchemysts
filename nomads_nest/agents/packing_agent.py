@@ -12,19 +12,18 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 from huggingface_hub import InferenceClient
-HUGGINGFACEHUB_API_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 
 # Initialize client with Hugging Face Inference API
 client = InferenceClient(
-    model="mistralai/Mistral-7B-Instruct-v0.1",
-    token=HUGGINGFACEHUB_API_TOKEN  # Replace with your token if needed
+    model="mistralai/Mistral-7B-Instruct-v0.3",
+    token= "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" # Replace with your token if needed
 )
 
 def generate_packing_list(destination, preferences):
     pref_string = ", ".join(preferences)
 
-    prompt = f"""[INST] You are a helpful and smart travel assistant. 
-Generate a clean, duplicate-free, categorized packing list for a trip to {destination}. 
+    prompt = f"""[INST] You are a helpful and smart travel assistant.
+Generate a clean, duplicate-free, categorized packing list for a trip to {destination}.
 
 The traveler enjoys: {pref_string}.
 

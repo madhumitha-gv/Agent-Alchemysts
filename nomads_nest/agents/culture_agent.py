@@ -22,7 +22,7 @@ def cultural_tips(destination):
 
     output = generator(
         prompt,
-        max_length=250,
+        max_length=512,
         temperature=0.8,
         top_p=0.95,
         repetition_penalty=1.1
