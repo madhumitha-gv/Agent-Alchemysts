@@ -34,8 +34,14 @@ The architecture consists of:
 python -m venv venv
 ```
 ### **2. Activate the Virtual Environment**
+
+#### On **Windows**
 ```bash
 .\\env\Scripts\activate
+```
+#### On **Mac**
+```bash
+source env/bin/activate
 ```
 ### **3. Install Dependencies**
 - Install the required packages listed in `requirements.txt`:
